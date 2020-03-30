@@ -1,0 +1,133 @@
+/* MP Timetable styles
+----------------------------------------------------------------- */
+
+.mptt-shortcode-wrapper .mptt-shortcode-table {
+	width: 100%;
+}
+
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .mptt-inner-event-content {
+	max-width: 100%;
+	hyphens: auto;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-title {
+	font-size: 15px;
+	line-height:1.25em;
+	color: #c9727a;
+	font-weight: 400;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-title,
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-description {
+	margin: 0;
+	padding: 4px;
+	max-width: 100%;
+	-webkit-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+	        box-sizing: border-box;
+
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .timeslot,
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-subtitle, 
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .event-user {
+	font-size: 15px;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container .timeslot {
+	margin-bottom: 1.15em;
+    margin-top: 0.275em;
+}
+
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody .mptt-event-container {
+	justify-content: center;
+    align-content: center;
+    outline: 1px solid #eeccc7;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tbody td {
+	width: 12.5%;
+}
+.mptt-shortcode-wrapper .mptt-shortcode-table tr.mptt-shortcode-row th {
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: none;
+	padding: 1.35em 1rem;
+} 
+.mptt-shortcode-wrapper .mptt-shortcode-list .mptt-column .mptt-events-list .mptt-list-event .event-user img{
+	display: none;
+}
+
+/* single page hardcore */
+body.single-mp-event .page_content_wrap .content .post_item_single .post_featured,
+body.single-mp-event .page_content_wrap .content .post_item_single .post_header,
+body.single-mp-event .page_content_wrap .content .post_item_single .post_content,
+body.single-mp-column .page_content_wrap .content .post_item_single .post_featured,
+body.single-mp-column .page_content_wrap .content .post_item_single .post_header,
+body.single-mp-column .page_content_wrap .content .post_item_single .post_content {
+	margin: 0;
+	padding: 10px;
+}
+body.single-mp-column .page_content_wrap .content .post_item_single .post_content,
+body.single-mp-event .page_content_wrap .content .post_item_single .post_content {
+	padding: 0 40px;
+	overflow: hidden;
+}
+body.single-mp-column .page_content_wrap .content .post_item_single .single_meta_top .post_meta:last-child,
+body.single-mp-event .page_content_wrap .content .post_item_single .single_meta_top .post_meta:last-child {
+	padding: 0; 
+}
+.post_type_mp-event .timeslot{
+	text-align: left;
+	box-sizing: border-box;
+	border: none;
+    width: 43%;
+    margin-right: 0;
+    padding: 1.2em 1.7647em;
+
+}
+.post_type_mp-event .timeslot{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.post_type_mp-event .timeslot,
+.post_type_mp-event .timeslot .timeslot-start, 
+.post_type_mp-event .timeslot .timeslot-end {
+	font-weight: 300;
+	font-size: 1em;
+}
+.post_type_mp-event .timeslot .timeslot-link {
+	font-weight: 400;
+	font-size: 18px;
+	margin: 0;
+}
+body.single-mp-column .page_content_wrap .content .post_item_single .post_meta.post_meta_single .post_share,
+body.single-mp-event .page_content_wrap .content .post_item_single .post_meta.post_meta_single .post_share{
+	float: left;
+	text-align: center;
+	margin-bottom: 1.25em
+}
+body.single-mp-column .page_content_wrap .content .post_item_single .post_meta.post_meta_single .post_share .social_item,
+body.single-mp-event .page_content_wrap .content .post_item_single .post_meta.post_meta_single .post_share .social_item{
+	margin: 0 0.51em 0.51em 0;
+}
+body.single-mp-column .page_content_wrap .content .post_item_single .post_meta.post_meta_single,
+body.single-mp-event .page_content_wrap .content .post_item_single .post_meta.post_meta_single {
+	margin-top: 0;
+}
+
+
+
+
+
+@media(max-width: 768px){	
+	.mptt-shortcode-wrapper .mptt-shortcode-list .mptt-column .mptt-events-list {
+		overflow: hidden;
+		margin: 0;
+	}
+	.mptt-shortcode-wrapper .mptt-shortcode-list .mptt-column .mptt-events-list .mptt-list-event {
+		width: calc(33.3333% - 2rem - 3px);
+		float: left;
+	}
+}
+@media(max-width: 480px){	
+	.mptt-shortcode-wrapper .mptt-shortcode-list .mptt-column .mptt-events-list .mptt-list-event {
+		width: calc(50% - 2rem - 3px);
+		float: left;
+	}
+}

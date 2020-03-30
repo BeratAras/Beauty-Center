@@ -1,0 +1,55 @@
+/* MailChimp for WP styles
+----------------------------------------------------------------- */
+form.mc4wp-form {
+	position:relative;
+	padding-right: 7em;
+	max-width: 440px;
+	margin: 0 auto;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="email"] {
+	width: 100%;
+	padding: 0.9em;
+	vertical-align:top;
+    -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="submit"] {
+	position: absolute;
+	z-index:1;
+	right: 0;
+	top: 0;
+	vertical-align:top;
+	font-size: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 1.77em 2.8em;
+}
+
+form.mc4wp-form .mc4wp-alert {
+	margin: 1.5em 0;
+	padding: 1em;
+	line-height:1.5em;
+}
+
+form.mc4wp-form .terms_agree_checkbox_wrap {
+	margin-top: 0.5em;
+}
+
+form.mc4wp-form .terms_agree_checkbox input[type="checkbox"] {
+	position: relative;
+	top: 1px;
+}
+
+
+@media (max-width: 1679px) {
+	form.mc4wp-form .mc4wp-form-fields input[type="submit"] { padding: 1.3em 1.8em;}
+}
+@media (max-width: 1263px) {
+	form.mc4wp-form .mc4wp-form-fields input[type="submit"] { padding: 1.1em 1.5em;}
+}
+
+.mprm_ie form.mc4wp-form .mc4wp-form-fields input[type="email"] {
+	padding: 1.025em;
+}
